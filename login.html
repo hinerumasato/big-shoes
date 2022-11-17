@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./Assets/CSS/login.css" />
+    <link rel="stylesheet" href="./Assets/CSS/header.css">
+    <link rel="stylesheet" href="./Assets/CSS/base.css">
+    <link rel="stylesheet" href="./Assets/CSS/footter.css">
+    <link rel="stylesheet" href="./Assets/Icon/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="./Assets/CSS/grid.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+    <script src="./Scripts/include.js"></script>
+  </head>
+  <body>
+    <div w3-include-html="./header.html"></div>
+    <div class="grid dang_nhap">
+      <div class="dang_nhap_center">
+        <div class="dang_nhap_lefp">
+          <h1 class="dang_nhap_tai_khoan font">ĐĂNG NHẬP TÀI KHOẢN</h1>
+
+          <h4 class="email size">Tên đăng nhập:</h4>
+
+          <input class="input_font username" type="email" placeholder="Tên đăng nhập" />
+
+          <h4 class="mat_khau size">Mật Khẩu</h4>
+
+          <input class="input_font password" type="password" placeholder="Mật Khẩu" />
+
+          <div class="line">
+            <button class="button login-btn">
+              <i class="fa-solid fa-lock-open"></i> ĐĂNG NHẬP
+            </button>
+
+            <a class="quen_mat_khau" href="">Quên mật khẩu?</a>
+          </div>
+        </div>
+
+        <div class="dang_nhap_right">
+          <h1 class="tao_tai_khoan_moi font">TẠO TÀI KHOẢN MỚI</h1>
+
+          <p class="chu_thich">
+            Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàng hơn
+            ! Ngoài ra <br />
+            còn có rất nhiều chính sách và ưu đãi cho các thành viên
+          </p>
+
+          <a href="./signin.html">
+            <button class="button">
+              <i class="fa-solid fa-user"></i>Tạo tài khoản
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div w3-include-html="./footter.html"></div>
+    <script>includeHTML();</script>
+    <script type="module" src="./Scripts/login.js"></script>
+  </body>
+</html>

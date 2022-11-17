@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+
+    <link rel="stylesheet" href="./Assets/CSS/header.css">
+    <link rel="stylesheet" href="./Assets/CSS/footter.css">
+    <link rel="stylesheet" href="./Assets/CSS/base.css">
+    <link rel="stylesheet" href="./Assets/Icon/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="./Assets/CSS/grid.css">
+
+    <link rel="stylesheet" href="./Assets/CSS/signin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+
+    <script src="./Scripts/include.js"></script>
+
+  </head>
+  <body>
+    <div w3-include-html="./header.html"></div>
+    <div class="grid dang_ky">
+      <div class="dang_kyheader_top">
+        <h1 class="font_size">ĐĂNG KÝ TÀI KHOẢN</h1>
+      </div>
+
+      <div class="dang_ky_center">
+        <div class="dang_ky_left">
+          <div class="input-field">
+            <h4 class="title">Họ:</h4>
+            <input class="input_size first-name" type="text" placeholder="Họ" />
+          </div>
+
+          <div class="input-field">
+            <h4 class="title">Email:</h4>
+            <input class="input_size email" type="email" placeholder="Email" />
+          </div>
+
+          <div class="input-field">
+            <h4 class="title">Tên đăng nhập:</h4>
+            <input class="input_size username" type="email" placeholder="Tên đăng nhập" />
+          </div>
+          
+          <div class="input-field">
+            <h4 class="title">Mật khẩu:</h4>
+            <input class="input_size password" type="text" placeholder="Mật khẩu" />
+          </div>
+
+          <div class="button">
+            <button class="button_size signin-btn">
+              <i class="fa-sharp fa-solid fa-key" id="doi_Chieu"></i> ĐĂNG KÝ
+            </button>
+            <button class="button_size">
+              <i class="fa-solid fa-lock-open"></i> ĐĂNG NHẬP
+            </button>
+          </div>
+        </div>
+
+        <div class="dang_ky_right">
+          <div class="input-field">
+            <h4 class="title">Tên:</h4>
+            <input class="input_size" type="text" placeholder="Tên" />
+          </div>
+
+          <div class="input-field">
+            <h4 class="title">Số điện thoại:</h4>
+            <input type="text" class="input_size" placeholder="Số điện thoại" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div w3-include-html="./footter.html"></div>
+    <script>includeHTML();</script>
+    <script type="module" src="./Scripts/signin.js"></script>
+  </body>
+</html>

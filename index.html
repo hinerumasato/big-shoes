@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/CSS/header.css">
+    <link rel="stylesheet" href="./Assets/CSS/footter.css">
+    <link rel="stylesheet" href="./Assets/CSS/base.css">
+    <link rel="stylesheet" href="./Assets/Icon/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="stylesheet" href="./Assets/CSS/grid.css">
+
+    <link rel="stylesheet" href="./Assets/CSS/index.css">
+    <link rel="stylesheet" href="./Assets/CSS/product.css">
+    <title>Shop giày</title>
+    <script src="./Scripts/include.js"></script>
+</head>
+
+<body>
+    <div class="header-wrap" w3-include-html="./header.html"></div>
+    <div class="grid container">
+        <div class="slider-wrap">
+            <div class="slider">
+                <img class="slider_1"
+                    src="//bizweb.dktcdn.net/thumb/large/100/091/132/themes/877468/assets/slider_1_image.jpg?1663744425866"
+                    alt="">
+                <img src="//bizweb.dktcdn.net/thumb/large/100/091/132/themes/877468/assets/slider_3_image.jpg?1663744425866"
+                    alt="" class="slider_2">
+            </div>
+        </div>
+
+        <div class="row container_content">
+            <div class="container_content-left c-3"></div>
+
+            <div class="grid container_content-right c-9">
+                <div class="container_content-right_new-product">
+                    <div class="main_title">
+                        <h2>CÁC SẢN PHẨM</h2>
+                    </div>
+
+                    <div class="container_content-right_items">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="./footter.html"></div>
+    <script>includeHTML();</script>
+    <script>
+        const slider = document.querySelector('.slider');
+        let transform = -50;
+        setInterval(() => {
+            let temp = slider;
+            slider.style.transform = `translateX(calc(${transform}%)`;
+            transform = (transform < 0) ? 0 : -50;
+        }, 7000);
+    </script>
+    <script type="module" src="./Scripts/getProducts.js"></script>
+</body>
+
+</html>

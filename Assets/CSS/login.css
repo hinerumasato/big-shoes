@@ -1,0 +1,70 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.size {
+  font-weight: 200;
+}
+
+.input_font:focus {
+  outline: none !important;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #719ece;
+}
+.font {
+  font-size: 18px;
+}
+
+.dang_nhap {
+  margin-top: 88px !important;
+}
+
+.dang_nhap_center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_font {
+  display: block;
+  width: 412px;
+  height: 38px;
+  border: 1px solid #eeeeee;
+}
+
+.button {
+  background: #2a2a2a;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  border: none;
+}
+
+.quen_mat_khau {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+.line {
+  margin-top: 16px;
+}
+
+.username {
+  margin: 33px 0px 14px 0px;
+}
+
+.mat_khau {
+  margin: 20px 0px 14px 0px;
+}
+
+.button:hover {
+  background: #dc3333;
+  cursor: pointer;
+}
+
+.quen_mat_khau:hover {
+  color: #dc3333;
+}
+
+.chu_thich {
+  margin: 33px 0px 18px 0px;
+}

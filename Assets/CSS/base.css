@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+:root {
+    --white-color: #fff;
+    --menu-color: #EA4242;
+    --nav-height: 54px;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.header-wrap {
+    background-color: #fff;
+    margin-bottom: 20px;
+    z-index: 9999;
+}

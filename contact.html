@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./Assets/CSS/header.css">
+  <link rel="stylesheet" href="./Assets/CSS/footter.css">
+  <link rel="stylesheet" href="./Assets/CSS/base.css">
+  <link rel="stylesheet" href="./Assets/Icon/fontawesome-free-6.2.0-web/css/all.css">
+  <link rel="stylesheet" href="./Assets/CSS/grid.css">
+
+  <link rel="stylesheet" href="./Assets/CSS/contact.css" />
+  <script src="./Scripts/include.js"></script>
+</head>
+<div w3-include-html="./header.html"></div>
+<div class="module-header grid">
+  <div class="title-head">
+    <h1 class="title">LIÊN HỆ</h1>
+  </div>
+
+  <div class="head row">
+
+    <div class="c-6 head_left">
+      <div class="container_head">
+        <div class="input-feild">
+          <h4 class="information_head">Tên *</h4>
+          <input id="heigth" class="input_head" type="text" placeholder="Tên">
+        </div>
+
+        <div class="input-feild">
+          <h4 class="information_head">Email *</h4>
+          <input id="heigth" class="input_head" type="email" placeholder="Email">
+        </div>
+      </div>
+
+      <div class="content_head">
+        <div class="input-area">
+          <h4>Nội dung *</h4>
+          <textarea class="input_head" id="input" cols="60" rows="7" placeholder=""></textarea>
+        </div>
+      </div>
+
+      <div class="Button_head">
+        <button class="button">Gửi liên hệ</button>
+      </div>
+    </div>
+
+    <div class="c-6 head_right">
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.214594666049!2d106.78957301410445!3d10.871276392257204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276398969f7b%3A0x9672b7efd0893fc4!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOw7RuZyBMw6JtIFRwLiBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1668192098761!5m2!1svi!2s"
+          style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+
+<div w3-include-html="./footter.html"></div>
+<script>includeHTML();</script>
+
+</body>
+
+</html>
